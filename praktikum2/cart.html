@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Imron Shop</title>
+
+    <!--bootstrap 4 cdn-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+      body {
+        background-color: #eeeeee;
+        font-family: "Open Sans", serif;
+        font-size: 14px;
+      }
+      .container-fluid {
+        margin-top: 70px;
+      }
+      .card-body {
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        padding: 1.4rem;
+      }
+      .img-sm {
+        width: 80px;
+        height: 80px;
+      }
+      .itemside .info {
+        padding-left: 15px;
+        padding-right: 7px;
+      }
+      .table-shopping-cart .price-wrap {
+        line-height: 1.2;
+      }
+      .table-shopping-cart .price {
+        font-weight: bold;
+        margin-right: 5px;
+        display: block;
+      }
+      .text-muted {
+        color: #969696 !important;
+      }
+      a {
+        text-decoration: none !important;
+      }
+      .card {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 0px;
+      }
+      .itemside {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+      }
+      .dlist-align {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+      }
+      [class*="dlist-"] {
+        margin-bottom: 5px;
+      }
+      .coupon {
+        border-radius: 1px;
+      }
+      .price {
+        font-weight: 600;
+        color: #212529;
+      }
+      .btn.btn-out {
+        outline: 1px solid #fff;
+        outline-offset: -5px;
+      }
+      .btn-main {
+        border-radius: 2px;
+        text-transform: capitalize;
+        font-size: 15px;
+        padding: 10px 19px;
+        cursor: pointer;
+        color: #fff;
+        width: 100%;
+      }
+      .btn-light {
+        color: #ffffff;
+        background-color: #f44336;
+        border-color: #f8f9fa;
+        font-size: 12px;
+      }
+      .btn-light:hover {
+        color: #ffffff;
+        background-color: #f44336;
+        border-color: #f44336;
+      }
+      .btn-apply {
+        font-size: 11px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--header-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Imron Shop</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="cart.html">
+                <i class="fa fa-shopping-cart"></i> Cart
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="checkout.html">Checkout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--end header-->
+
+    <div class="container-fluid">
+      <div class="row">
+        <aside class="col-lg-9">
+          <div class="card">
+            <div class="table-responsive">
+              <table class="table table-borderless table-shopping-cart">
+                <thead class="text-muted">
+                  <tr class="small text-uppercase">
+                    <th scope="col">Produk</th>
+                    <th scope="col" width="120">Kuantitas</th>
+                    <th scope="col" width="120">Harga</th>
+                    <th
+                      scope="col"
+                      class="text-right d-none d-md-block"
+                      width="200"
+                    ></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <figure class="itemside align-items-center">
+                        <div class="aside">
+                          <img
+                            src="https://images.tokopedia.net/img/cache/900/VqbcmM/2021/5/12/5e41167b-215e-4e9c-a156-960a57bc0cc6.jpg"
+                            class="img-sm"
+                          />
+                        </div>
+                        <figcaption class="info">
+                          <a href="#" class="title text-dark" data-abc="true"
+                            >CHOETECH HDMI Cable Ultra High Speed 8K Kabel HDMI
+                            2.1 Male 200 CM</a
+                          >
+                          <p class="text-muted small">
+                            SIZE: 200 CM <br />
+                            Brand: CHOETECH
+                          </p>
+                        </figcaption>
+                      </figure>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                      </select>
+                    </td>
+                    <td>
+                      <div class="price-wrap">
+                        <var class="price">Rp. 109.900</var>
+                        <small class="text-muted"> Rp 109.900 satuan </small>
+                      </div>
+                    </td>
+                    <td class="text-right d-none d-md-block">
+                      <a
+                        data-original-title="Save to Wishlist"
+                        title=""
+                        href=""
+                        class="btn btn-light"
+                        data-toggle="tooltip"
+                        data-abc="true"
+                      >
+                        <i class="fa fa-heart"></i
+                      ></a>
+                      <a href="" class="btn btn-light" data-abc="true">
+                        Hapus</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <figure class="itemside align-items-center">
+                        <div class="aside">
+                          <img
+                            src="https://images.tokopedia.net/img/cache/900/VqbcmM/2022/1/4/f1183270-82f6-4e0e-80d4-26babeb47d37.jpg"
+                            class="img-sm"
+                          />
+                        </div>
+                        <figcaption class="info">
+                          <a href="#" class="title text-dark" data-abc="true"
+                            >Hub Converter USB Type C 3.1 Macbook Laptop to USB
+                            5 in 1 PX UCH50</a
+                          >
+                          <p class="text-muted small">
+                            SIZE: 30CM <br />
+                            Brand: PX
+                          </p>
+                        </figcaption>
+                      </figure>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                      </select>
+                    </td>
+                    <td>
+                      <div class="price-wrap">
+                        <var class="price">Rp. 199.000</var>
+                        <small class="text-muted"> Rp. 199.000 satuan </small>
+                      </div>
+                    </td>
+                    <td class="text-right d-none d-md-block">
+                      <a
+                        data-original-title="Save to Wishlist"
+                        title=""
+                        href=""
+                        class="btn btn-light"
+                        data-toggle="tooltip"
+                        data-abc="true"
+                      >
+                        <i class="fa fa-heart"></i
+                      ></a>
+                      <a
+                        href=""
+                        class="btn btn-light btn-round"
+                        data-abc="true"
+                      >
+                        Hapus</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </aside>
+        <aside class="col-lg-3">
+          <div class="card">
+            <div class="card-body">
+              <dl class="dlist-align">
+                <dt>Total harga:</dt>
+                <dd class="text-right ml-3">Rp. 308.900</dd>
+              </dl>
+              <dl class="dlist-align">
+                <dt>Discount:</dt>
+                <dd class="text-right text-danger ml-3">- Rp. 0</dd>
+              </dl>
+              <dl class="dlist-align">
+                <dt>Total:</dt>
+                <dd class="text-right text-dark b ml-3">
+                  <strong>Rp. 308.900</strong>
+                </dd>
+              </dl>
+              <hr />
+              <a
+                href="#"
+                class="btn btn-out btn-primary btn-square btn-main"
+                data-abc="true"
+              >
+                Checkout
+              </a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <!--jquery 3 cdn-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap 4 cdn-->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
